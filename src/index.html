@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/bb399ef891.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>ThreeJS Starter</title>
+  </head>
+  <body>
+    <div class="bigbg">
+      <!-- <img src="backgroundimg.jpg" alt="backgroundimg"> -->
+      <header>
+        <a href="#" class="logo"><span id="logocolor">VOLUM</span>³</a>
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">A propos</a></li>
+          <li><a href="#">Travaux</a></li>
+          <li><a href="#">Nous contacter</a></li>
+        </ul>
+      </header>
+      <section class="banner"></section>
+      <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+          var header = document.querySelector("header");
+          header.classList.toggle("sticky", window.scrollY > 1);
+        });
+      </script>
+
+      <!-- <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("h1");
+        header.classList.toggle("paramlax", window.scrollY > 1);
+      });
+    </script> -->
+      <canvas class="webgl"></canvas>
+      <div class="container">
+        <!-- <h2>Agence du numérique</h2> -->
+        <h1 class="animate__animated animate__pulse animate__infinite infinite">
+          Agence du numérique
+        </h1>
+
+        <!-- <div class="animate__animated animate__shakeY animate__infinite infinite">
+        <i class="fas fa-chevron-down"></i>
+      </div> -->
+      </div>
+      <canvas class="webgl"></canvas>
+
+      <!-- <section></section> -->
+      <div class="main">
+        <div class="bloc_1">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+            inventore dolorum sed pariatur nam architecto deleniti deserunt
+            rerum ab expedita est, cum quo explicabo repellendus ullam dolorem
+            enim, non in.
+          </p>
+        </div>
+        <div class="bloc_2">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+            inventore dolorum sed pariatur nam architecto deleniti deserunt
+            rerum ab expedita est, cum quo explicabo repellendus ullam dolorem
+            enim, non in. Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem
+            ipsum dolor, sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+      <div class="bg_1"></div>
+
+      <div class="cursors">
+        <div class="first">
+          <span></span>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <script src="./cursors.js"></script>
+    </div>
+  </body>
+</html>
